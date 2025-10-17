@@ -1,6 +1,6 @@
-import { useState } from "react";
-import sucesso from "../assets/win.png";
-import erro from "../assets/raios.png";
+import { useState } from "react";   
+import sucesso from "../assets/sucesso.png";
+import erro from "../assets/errou.png";
 
 export function MissaoModal({ missao, onClose, onConcluir }) {
   const [resposta, setResposta] = useState("");
@@ -20,7 +20,7 @@ export function MissaoModal({ missao, onClose, onConcluir }) {
       setResultado("Resposta correta! Parabéns!");
       setStatus("sucesso");
 
-      // ✅ chama a função de concluir após 1s (tempo para mostrar feedback)
+      // chama a função de concluir após 1s (tempo para mostrar feedback)
       setTimeout(() => {
         onConcluir(missao.id);
       }, 1000);

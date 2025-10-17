@@ -5,7 +5,7 @@ import { MissaoModal } from '../Componentes/MissaoModal';
 
 export function Missao() {
   const [missaoSelecionada, setMissaoSelecionada] = useState(null);
-  const [missoesConcluidas, setMissoesConcluidas] = useState([]); // ✅ novo estado
+  const [missoesConcluidas, setMissoesConcluidas] = useState([]); //  novo estado
 
   const concluirMissao = (id) => {
     setMissoesConcluidas((prev) => [...prev, id]); // adiciona id no array

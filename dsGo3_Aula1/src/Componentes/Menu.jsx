@@ -1,6 +1,6 @@
 import missao from '../assets/missoes.png';
-import mapa from '../assets/GeoLocalização.png';
-import bau from '../assets/bau_tratado.png';
+import mapa from '../assets/GeoLocalizacacao.png';
+import bau from '../assets/Inventario.png';
 import camera from '../assets/camera.png';
 import { Link } from 'react-router-dom'
 export function Menu() {
