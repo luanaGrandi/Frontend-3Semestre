@@ -1,4 +1,4 @@
-import { useState } from "react";   
+import { useState } from "react";
 import sucesso from "../assets/sucesso.png";
 import erro from "../assets/errou.png";
 
@@ -20,7 +20,6 @@ export function MissaoModal({ missao, onClose, onConcluir }) {
       setResultado("Resposta correta! Parabéns!");
       setStatus("sucesso");
 
-      // chama a função de concluir após 1s (tempo para mostrar feedback)
       setTimeout(() => {
         onConcluir(missao.id);
       }, 1000);
@@ -31,10 +30,17 @@ export function MissaoModal({ missao, onClose, onConcluir }) {
   };
 
   return (
-    <dialog open className="modal">
+    <dialog
+      open
+      className="modal"
+      role="dialog"
+      aria-labelledby="titulo-missao"
+      aria-describedby="descricao-missao"
+    >
       <h2 className="titulo" id="titulo-missao">
         {missao.titulo}
       </h2>
+
       <p id="descricao-missao">{missao.descricao}</p>
 
       <label htmlFor="resposta" className="sr-only">
@@ -56,7 +62,11 @@ export function MissaoModal({ missao, onClose, onConcluir }) {
       </div>
 
       {resultado && (
-        <div className="resultado">
+        <div
+          className="resultado"
+          role="status"
+          aria-live="polite"
+        >
           <p>{resultado}</p>
           {status === "sucesso" && (
             <img

@@ -28,6 +28,21 @@
   &::-webkit-scrollbar-track {
     background: transparent;
   }
+
+  @media (max-width: 1024px) {
+    padding: 2rem 1.5rem;
+    max-height: 70vh;
+  }
+
+  @media (max-width: 768px) {
+    padding: 1.5rem 1rem;
+    max-height: 60vh;
+  }
+
+  @media (max-width: 480px) {
+    padding: 1rem 0.5rem;
+    max-height: 90vh;
+  }
 }
 
 /* TÍTULO */
@@ -36,6 +51,14 @@
   margin-bottom: 1rem;
   font-size: 2rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.2rem;
+  }
 }
 
 /* GRID DE MISSÕES */
@@ -43,6 +66,14 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
+
+  @media (max-width: 768px) {
+    gap: 1.5rem;
+  }
+
+  @media (max-width: 480px) {
+    gap: 1rem;
+  }
 }
 
 /* CARD */
@@ -60,6 +91,18 @@
   min-height: 220px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 18px;
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+    min-height: 200px;
+    font-size: 16px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0.8rem;
+    min-height: 180px;
+    font-size: 14px;
+  }
 }
 
 .missao-card:hover {
@@ -70,10 +113,22 @@
 /* TEXTO */
 .missao-card h3 {
   font-size: 1.3rem;
+
+  @media (max-width: 768px) {
+    font-size: 1.1rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1rem;
+  }
 }
 
 .missao-card p {
   line-height: 1.5;
+
+  @media (max-width: 480px) {
+    font-size: 0.9rem;
+  }
 }
 
 .missao-card .conteudo {
@@ -81,4 +136,8 @@
   font-size: 1rem;
   margin-bottom: 0.5rem;
   color: #6a1b9a;
+
+  @media (max-width: 480px) {
+    font-size: 0.85rem;
+  }
 }
