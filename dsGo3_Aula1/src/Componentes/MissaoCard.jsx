@@ -1,4 +1,9 @@
 export function MissaoCard({ missao, onIniciarMissao, concluida }) {
+  const inventario = JSON.parse(localStorage.getItem("inventario")) || [];
+  const concluidaLocal = inventario.some((f) => f.id === missao.id);
+
+  const isConcluida = concluida !== undefined ? concluida : concluidaLocal;
+
   return (
     <article 
       className="missao-card"
@@ -8,10 +13,10 @@ export function MissaoCard({ missao, onIniciarMissao, concluida }) {
       <p>{missao.missao}</p>
       <button
         onClick={() => onIniciarMissao(missao)}
-        disabled={concluida}
-        aria-pressed={concluida ? "true" : "false"}
+        disabled={isConcluida}
+        aria-pressed={isConcluida ? "true" : "false"}
       >
-        {concluida ? "Missão concluída" : "Iniciar Missão"}
+        {isConcluida ? "Missão concluída" : "Iniciar Missão"}
       </button>
     </article>
   );
