@@ -1,0 +1,10 @@
+{
+  "short_name": "Luana poney",
+  "name": "App luanaPoney",
+  "start_url": "/",
+  "background_color": "#ffc7ea",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#ff4fd8"
+  
+}

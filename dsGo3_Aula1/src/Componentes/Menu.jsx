@@ -27,7 +27,7 @@ export function Menu() {
         </li>
 
         <li>
-          <Link to="#" aria-label="Ir para GeoLocalização">
+          <Link to="mapa" aria-label="Ir para GeoLocalização">
             <figure>
               <img src={mapa} alt="Ícone de GeoLocalização" />
               <figcaption>GeoLocalização</figcaption>

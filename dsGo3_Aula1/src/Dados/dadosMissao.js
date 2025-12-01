@@ -1,3 +1,16 @@
+import figuraEquipe from '../assets/figurinhas/figuraEquipe.png';
+import figuraRarra from '../assets/figurinhas/figuraRarra.png';
+import figuraFluttershy from '../assets/figurinhas/figuraFluttershy.png';
+import FiguraPplejack from '../assets/figurinhas/FiguraPplejack.png';
+import figuraRainbowDash from '../assets/figurinhas/figuraRainbowDash.png';
+import figuraRarra2 from '../assets/figurinhas/figuraRarra2.png';
+import Rarity from '../assets/figurinhas/Rarity.png';
+import Celestia from '../assets/figurinhas/Celestia.png';
+import Starlight from '../assets/figurinhas/Starlight.png';
+import Luna from '../assets/figurinhas/Luna.png';
+import Sunset from '../assets/figurinhas/Sunset.png';
+import Spike from '../assets/figurinhas/Spike.png';
+
 export const missoes = [
   {
     id: 1,
@@ -6,7 +19,7 @@ export const missoes = [
     descricao: "python manage.py ____",    
     respostaCorreta: "runserver",
     status: 'disponivel',
-    figura: '/src/assets/figurinhas/figuraRarra.png'
+    figura: figuraRarra
   },
   {
     id: 2,
@@ -15,7 +28,7 @@ export const missoes = [
     descricao: "Qual é o comando para importar o dart?",
     respostaCorreta: "import 'dart:io'",
     status: 'disponivel',
-    figura: '/src/assets/figurinhas/figuraEquipe.png'
+    figura: figuraEquipe
   },
   {
     id: 3,
@@ -24,7 +37,7 @@ export const missoes = [
     descricao: "npm ___ ___",
     respostaCorreta: "run dev",
     status: 'disponivel',
-    figura: '/src/assets/figurinhas/figuraFluttershy.png'
+    figura: figuraFluttershy
   },
   {
     id: 4,
@@ -33,7 +46,7 @@ export const missoes = [
     descricao: "Qual é a materia do modesto",
     respostaCorreta: "IOT",
     status: 'disponivel',
-    figura: '/src/assets/figurinhas/FiguraPplejack.png'
+    figura: FiguraPplejack
   },
   {
     id: 5,
@@ -42,7 +55,7 @@ export const missoes = [
     descricao: "Qual tag que não é semantica, mas amamos usar?",
     respostaCorreta: "div",
     status: 'disponivel',
-    figura: '/src/assets/figurinhas/figuraRainbowDash.png'
+    figura: figuraRainbowDash
   }
   ,
   {
@@ -52,7 +65,7 @@ export const missoes = [
     descricao: "O que usamos para fazer o teste de front?",
     respostaCorreta: "vitest",
     status: 'disponivel',
-    figura: '/src/assets/figurinhas/figuraRarra2.png'
+    figura: figuraRarra2
   },
   {
     id: 7,
@@ -61,7 +74,7 @@ export const missoes = [
     descricao: "Toda tabela tem?",
     respostaCorreta: "Chave Primaria",
     status: 'disponivel',
-    figura: '/src/assets/figurinhas/Rarity.png'
+    figura: Rarity
   }
   ,
   {
@@ -71,7 +84,7 @@ export const missoes = [
     descricao: "O que usamos para deixar o codigo limpo?",
     respostaCorreta: "clean code",
     status: 'disponivel',
-    figura: '/src/assets/figurinhas/Celestia.png'
+    figura: Celestia
   },
   {
     id: 9,
@@ -80,7 +93,7 @@ export const missoes = [
     descricao: "quantos a Luana tem?",
     respostaCorreta: "17",
     status: 'disponivel',
-    figura: '/src/assets/figurinhas/Starlight.png'
+    figura: Starlight
   },
   {
     id: 10,
@@ -89,7 +102,7 @@ export const missoes = [
     descricao: "Qual meu sobrenome?",
     respostaCorreta: "Grandi",
     status: 'disponivel',
-    figura: '/src/assets/figurinhas/Luna.png'
+    figura: Luna
   },
   {
     id: 11,
@@ -98,7 +111,7 @@ export const missoes = [
     descricao: "O que você ganha se não faltar no senai e ter a media de 95 pra cima?",
     respostaCorreta: "Aluno ouro",
     status: 'disponivel',
-    figura: '/src/assets/figurinhas/Sunset.png'
+    figura: Sunset
   },
   {
     id: 12,
@@ -107,6 +120,6 @@ export const missoes = [
     descricao: "Quantos minutos que nós temos de intervalo?",
     respostaCorreta: "20",
     status: 'disponivel',
-    figura: '/src/assets/figurinhas/Spike.png'
+    figura: Spike
   },
 ];
